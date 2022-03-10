@@ -168,8 +168,11 @@ export default function Home() {
     {
       try {
         if (isBSC == true || isBSC == false) {
-
-          window.ethereum.request({ method: "eth_requestAccounts" })
+          const load = async()=>{
+            window.ethereum.request({ method: "eth_requestAccounts" })
+            await window.location.reload()
+          }
+          load()
         }
         else {
           alert('please connect to correct Network')
