@@ -11,9 +11,11 @@ export const Layout = ({ children, account, isLoad }) => {
             </Head>
 
             <main >
-                <div className='flex flex-col  mt-3'>
+              
+
+                    <div className='flex flex-col  mt-3'>
                     <div className='self-center'>
-                        {isLoad ?
+                        {account != undefined ?
                             <div className="p-6 max-w-sm bg-white rounded-lg border border-gray-200 shadow-md dark:bg-gray-800 dark:border-gray-700">
                                 <div  >
                                     <h5 className="ext-centerr mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Welcome</h5>
@@ -22,7 +24,7 @@ export const Layout = ({ children, account, isLoad }) => {
                                 </div>
                             </div>
                             : null}
-                    </div>
+                    </div> 
                     <div className='mt-4 self-center'>
                         <Navbar />
                     </div>

@@ -189,17 +189,17 @@ export default function Home() {
 
       <Layout account={account} isLoad={isLoad}>
         <div className="flex justify-center mt-4">
-          {isBSC == undefined ? <span data-aos="fade-left">Please connect to correct Network</span> : null}
-          {isLoad ? null : <span data-aos="fade-left">Please connect install Metamask </span>}
+          {isBSC == undefined ? <span >Please connect to correct Network</span> : null}
+          {isLoad ? null : <span >Please connect install Metamask </span>}
 
           {isLoad ? <div>
 
-            {isBSC ? <span data-aos="fade-left">
+            {isBSC ? <span >
               you are connect to BSC
             </span> : null}
           </div> : null}
 
-          {isBSC == false ? <span data-aos='fade-left'>you are connect to Rinkeby</span> : null}
+          {isBSC == false ? <span >you are connect to Rinkeby</span> : null}
 
         </div>
 
