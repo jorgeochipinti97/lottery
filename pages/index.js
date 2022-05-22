@@ -3,7 +3,7 @@ import { useEffect, useState } from "react"
 import Web3 from "web3"
 import Aos from "aos"
 import "aos/dist/aos.css"
-import {contratoLazaro} from '../abis/lottery.json'
+import contratoLazaro from '../abis/lottery.json'
 import { Header } from "../components/Header"
 import { ButtonConnect } from "../components/ButtonConnect"
 import { CardPrice } from "../components/CardPrice"
