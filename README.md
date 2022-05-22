@@ -1,1 +1,0 @@
-this is a lottery Dapp built by Jorge Ochipinti with Next JS and solidity, Tailwind was used for the styles. It has contracts deployed on Rinkeby and BSC testnet, with their corresponding abis, from which we get the methods. The value of the tickets is 0.001 eth, mapping a string with the address, obtaining a random winner with the getWinner method.

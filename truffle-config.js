@@ -3,18 +3,24 @@ require("@babel/register");
 //require('babel-polyfill');
 require("@babel/polyfill");
 
-const HDWalletProvider = require("truffle-hdwallet-provider")
-
+var HDWalletProvider = require("truffle-hdwallet-provider")
+var mnemonic = 
 
 module.exports = {
   networks: {
 
+    // Ganache 
+    development: {
+      host: "127.0.0.1",
+      port: 7545,
+      network_id: "*", // Match any network id
+    },
 
     // Rinkeby
     rinkeby: {
       provider: function () {
                                               // nodo de infura <- crear nodo en infura
-        return new HDWalletProvider("", "https://rinkeby.infura.io/v3/2a960bb2952247aa90c9347cd0e43fa7")
+        return new HDWalletProvider(mnemonic, "https://rinkeby.infura.io/v3/5e256cb969184ddab77a3a7c49084f7c")
       },
       network_id: 4,
       gas: 4500000,
@@ -24,7 +30,7 @@ module.exports = {
     // Binance Smart Chain (BSC)
     bscTestnet: {
                                                       // dir de bsc test
-      provider: () => new HDWalletProvider("", "https://data-seed-prebsc-1-s1.binance.org:8545"),
+      provider: () => new HDWalletProvider("crumble shaft fish start sugar cart rain demand soda ginger must venue", "https://data-seed-prebsc-1-s1.binance.org:8545"),
       network_id: 97,
       confirmations: 10,
       timeoutBlocks: 200,

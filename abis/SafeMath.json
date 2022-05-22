@@ -10,7 +10,7 @@
   "sourceMap": "272:587:1:-:0;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;",
   "deployedSourceMap": "272:587:1:-:0;;;;;;;;",
   "source": "// SPDX-License-Identifier: MIT\npragma solidity >0.4.4 <0.8.10;\npragma experimental ABIEncoderV2;\n\n\n// Implementacion de la libreria SafeMath para realizar las operaciones de manera segura\n// Fuente: \"https://gist.github.com/giladHaimov/8e81dbde10c9aeff69a1d683ed6870be\"\n\nlibrary SafeMath{\n    // Restas\n    function sub(uint256 a, uint256 b) internal pure returns (uint256) {\n      assert(b <= a);\n      return a - b;\n    }\n    \n    // Sumas\n    function add(uint256 a, uint256 b) internal pure returns (uint256) {\n      uint256 c = a + b;\n      assert(c >= a);\n      return c;\n    }\n    \n    // Multiplicacion\n    function mul(uint256 a, uint256 b) internal pure returns (uint256) {\n        if (a == 0) {\n            return 0;\n        }\n\n        uint256 c = a * b;\n        require(c / a == b, \"SafeMath: multiplication overflow\");\n\n        return c;\n    }\n}",
-  "sourcePath": "/Users/jorgeochipinti/Desktop/programacion/solidity/loteria/loteria/contracts/SafeMath.sol",
+  "sourcePath": "/Users/jorgeochipinti/Desktop/programacion/solidity/hashMSC/nft/contracts/SafeMath.sol",
   "ast": {
     "absolutePath": "project:/contracts/SafeMath.sol",
     "exportedSymbols": {
@@ -2075,7 +2075,7 @@
   },
   "networks": {},
   "schemaVersion": "3.4.3",
-  "updatedAt": "2022-03-10T05:25:02.134Z",
+  "updatedAt": "2022-02-17T04:05:24.024Z",
   "devdoc": {
     "kind": "dev",
     "methods": {},
