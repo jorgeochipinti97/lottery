@@ -2,7 +2,8 @@ import Link from 'next/link'
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import GitHubIcon from '@mui/icons-material/GitHub';
 import InstagramIcon from '@mui/icons-material/Instagram';
-export default function Footer() {
+
+export const Footer= ()=> {
   return (
     <>
       <footer className="bg-gray-800">
