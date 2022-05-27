@@ -30,7 +30,7 @@ module.exports = {
     // Binance Smart Chain (BSC)
     bscTestnet: {
                                                       // dir de bsc test
-      provider: () => new HDWalletProvider("crumble shaft fish start sugar cart rain demand soda ginger must venue", "https://data-seed-prebsc-1-s1.binance.org:8545"),
+      provider: () => new HDWalletProvider("", "https://data-seed-prebsc-1-s1.binance.org:8545"),
       network_id: 97,
       confirmations: 10,
       timeoutBlocks: 200,
